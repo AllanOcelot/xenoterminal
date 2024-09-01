@@ -5,9 +5,9 @@
   "main": "main.scss",
   "scripts": {
     "dev": "vite",
-    "watch:src": "nodemon --watch src --ext js,scss,html --exec \"npm run build\"",
-    "build": "echo 'Building SCSS...' && sass src/main.scss dist/index.css --style=compressed  --source-map",
-    "start": "nodemon --watch src --ext js,scss,html --exec \"npm run dev & npm run build\""
+    "build": "vite build && npm run sass:compile",
+    "serve": "vite preview",
+    "sass:compile": "sass src/main.scss dist/index.css"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "nodemon": "^3.1.4",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.77.8",
     "vite": "^5.4.2"
   }
