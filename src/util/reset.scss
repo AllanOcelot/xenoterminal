@@ -1,0 +1,26 @@
+/*  This is essentially https://www.joshwcomeau.com/ 's reset, with minor tweaking.
+    Thanks josh!
+*/
+
+*, *::before, *::after , html{
+    box-sizing: border-box;
+}
+
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}

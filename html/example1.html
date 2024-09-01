@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XENO TERMINAL</title>
+
+
+    <link rel="stylesheet"  href="/dist/index.css"/>
+
+</head>
+
+<body>
+    <header>
+        <h1>Main Header: All HTML Elements</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <h2>Section 1: Text Content</h2>
+        <p>
+            This is a <strong>paragraph</strong> with some <em>emphasized</em> text. Here’s a <a href="#">link</a> and some
+            <abbr title="Hypertext Markup Language">HTML</abbr> code.
+        </p>
+        <blockquote cite="https://www.example.com">
+            "This is a blockquote with a citation."
+        </blockquote>
+        <pre><code>This is preformatted text.</code></pre>
+        <p><small>Small text for footnotes or legal disclaimers.</small></p>
+        <p><del>Deleted text.</del> <ins>Inserted text.</ins></p>
+        <p>Superscript: H<sup>2</sup>O and Subscript: CO<sub>2</sub></p>
+        <address>
+            123 Alien Street<br>
+            Space City, Mars 12345<br>
+            <a href="mailto:alien@example.com">alien@example.com</a>
+        </address>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2: Media and Embeds</h2>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figcaption>Figure 1: A placeholder image with a caption.</figcaption>
+        </figure>
+        <video controls>
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <iframe src="https://www.example.com" title="Example Iframe"></iframe>
+        <object data="sample.pdf" type="application/pdf" width="300" height="200">
+            <p>Your browser does not support embedded PDFs.</p>
+        </object>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3: Forms, Tables, and Interactive Elements</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Form Legend</legend>
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" name="text-input"><br>
+
+                <label for="password-input">Password Input:</label>
+                <input type="password" id="password-input" name="password-input"><br>
+
+                <label for="email-input">Email Input:</label>
+                <input type="email" id="email-input" name="email-input"><br>
+
+                <label for="number-input">Number Input:</label>
+                <input type="number" id="number-input" name="number-input" min="1" max="10"><br>
+
+                <label for="range-input">Range Input:</label>
+                <input type="range" id="range-input" name="range-input" min="0" max="100"><br>
+
+                <label for="color-input">Color Input:</label>
+                <input type="color" id="color-input" name="color-input"><br>
+
+                <label for="date-input">Date Input:</label>
+                <input type="date" id="date-input" name="date-input"><br>
+
+                <label for="time-input">Time Input:</label>
+                <input type="time" id="time-input" name="time-input"><br>
+
+                <label for="file-input">File Input:</label>
+                <input type="file" id="file-input" name="file-input"><br>
+
+                <label for="select-input">Select Input:</label>
+                <select id="select-input" name="select-input">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select><br>
+
+                <label for="textarea-input">Textarea Input:</label>
+                <textarea id="textarea-input" name="textarea-input"></textarea><br>
+
+                <label>Radio Input:</label>
+                <input type="radio" id="radio1" name="radio-input" value="radio1">
+                <label for="radio1">Radio 1</label>
+                <input type="radio" id="radio2" name="radio-input" value="radio2">
+                <label for="radio2">Radio 2</label><br>
+
+                <label>Checkbox Input:</label>
+                <input type="checkbox" id="checkbox1" name="checkbox-input" value="checkbox1">
+                <label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" id="checkbox2" name="checkbox-input" value="checkbox2">
+                <label for="checkbox2">Checkbox 2</label><br>
+
+                <button type="submit">Submit Button</button>
+                <input type="reset" value="Reset Button">
+            </fieldset>
+        </form>
+
+        <table>
+            <caption>Sample Table</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer 1</td>
+                    <td>Footer 2</td>
+                    <td>Footer 3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <details>
+            <summary>Details Summary</summary>
+            <p>This is some hidden text inside a details element.</p>
+        </details>
+
+        <dialog open>
+            <p>This is a dialog box.</p>
+            <button id="close-dialog">Close</button>
+        </dialog>
+
+        <progress value="70" max="100">70%</progress><br>
+
+        <meter value="2" min="0" max="10">2 out of 10</meter>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024  <a href="#">Example</a></p>
+    </footer>
+
+    <script>
+        // Example script
+        document.getElementById('close-dialog').addEventListener('click', function () {
+            document.querySelector('dialog').close();
+        });
+    </script>
+</body>
+
+</html>

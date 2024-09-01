@@ -1,4 +1,10 @@
-// build test
-* {
-    display: none;
-}
+// util
+@use './util/reset';
+
+
+// common
+@use './common/terminal'
+
+// forms
+
+// responsive
