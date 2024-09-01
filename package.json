@@ -1,0 +1,30 @@
+{
+  "name": "@allanocelot/xenoterminal",
+  "version": "1.0.0",
+  "description": "A simple collection of CSS that styles websites in the asthetic of CRT / Sci Fi computers",
+  "main": "main.scss",
+  "scripts": {
+    "build": "sass src/main.scss dist/index.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xenoterminal"
+  },
+  "keywords": [
+    "css",
+    "alien",
+    "framework",
+    "fun",
+    "console",
+    "simple",
+    "clear",
+    "minimal",
+    "80s",
+    "scifi"
+  ],
+  "author": "Allan Ocelot",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
