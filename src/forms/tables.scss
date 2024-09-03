@@ -2,10 +2,12 @@
 
 
 table {
-  opacity: 0.8;
+  opacity: 0.5;
   border: 2px solid colors.$color-green-one;
   border-collapse: collapse;
   box-shadow: 0px 0px 4px 2px rgba(0, 255, 0, 0.2);
+  transition: all 0.4s;
+  transition-delay: .2s;
 
   thead th {
     padding: 0;
@@ -50,6 +52,11 @@ table {
   }
 
 
+  &:hover{
+    opacity: .8;
+    transition: all 0.2s;
+    transition-delay: .1s;
+  }
 
   &.xeno-table {
     width: 100%;
