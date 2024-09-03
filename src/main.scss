@@ -5,8 +5,10 @@
 
 
 // common
+@use './common/setup';
 @use './common/terminal';
  
 // forms
+@use './forms/tables.scss'
  
 // responsive  
