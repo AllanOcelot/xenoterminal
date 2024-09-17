@@ -8,14 +8,14 @@
 
 .terminal {
     background-color: colors.$background-primary;
-    color: colors.$color-green-one;
     font-family: "Courier New", Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 20px;
-    text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
     position: relative;
+    color: colors.$color-green-one;
+    text-shadow: 0px 0px 10px rgba(colors.$color-green-one, 0.7);
 
     &:before,
     &:after {
@@ -28,15 +28,30 @@
       pointer-events: none;
     }
 
-    &:before {
-        background-image: radial-gradient(rgb(138 255 141 / 8%) 0%, rgba(0, 0, 0, 0.4990371148) 80%);
+
+
+    // Themeing 
+    &.theme-blue {
+      color: colors.$color-blue-one;
+      text-shadow: 0px 0px 10px rgba(colors.$color-blue-one, 0.7);
     }
 
-    &:after {
+    &.theme-red {
+      color: colors.$color-red-one;
+      text-shadow: 0px 0px 10px rgba(colors.$color-red-one, 0.7);
+    }
+
+
+    &.crt {
+      &:after {
         background: repeating-linear-gradient( 0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 2px ), linear-gradient( 0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 100% );
         opacity: 0.1; 
         animation: screenFlicker 0.9s infinite alternate;
+      }
+      &:before {
+        background-image: radial-gradient(rgb(138 255 141 / 8%) 0%, rgba(0, 0, 0, 0.4990371148) 80%);
     }
+
 }
 
 @keyframes screenFlicker {
