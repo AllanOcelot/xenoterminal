@@ -4,6 +4,7 @@
   border: 1px solid;
   box-shadow: 0 0 6px 1px rgba(0, 0, 0, 1);
   background: rgba(0, 0, 0, 0.4);
+  position: relative;
   .title {
     width: 100%;
     border-bottom: 2px solid;
@@ -12,6 +13,22 @@
   }
   .content {
     padding: 0.5rem 1rem;
+  }
+
+  &.icon { 
+    &:before {
+      position: absolute;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 5rem;
+      height: 100%;
+      background: rgba(0,0,0,0.2);
+      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }  
   }
 }
 
