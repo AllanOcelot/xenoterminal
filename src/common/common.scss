@@ -1,0 +1,30 @@
+/* For common re-used items */
+
+.xeno-box {
+  border: 1px solid;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.4);
+  .title {
+    width: 100%;
+    border-bottom: 2px solid;
+    padding: 0.5rem 1rem;
+
+  }
+  .content {
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+
+// BUTTONS
+// It's important we have buttons with padding/margin 
+// and ones without 
+// we don't want to be messing up our users layouts.
+.button {
+  padding: .7rem 1rem;
+
+  &.border {
+    border: 1px solid;
+  }
+}
